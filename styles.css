@@ -8,6 +8,15 @@ body {
     height: 100vh;
     justify-content: center;
     overflow: hidden;
+    background-color: #ccffcc;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
 }
 
 .desk-container {
@@ -120,4 +129,26 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+
+.start-button {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Get it to display inline */
+  font-size: 16px; /* Increase font size */
+  margin: 20px 400px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon on hover */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  font-family: 'Verdana', sans-serif; /* Font type for the button */
+}
+
+.start-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
 }

@@ -1,3 +1,9 @@
+document.getElementById('start').onclick = function() {
+  document.getElementById('menu').style.display = "none";
+  document.getElementById('laboratorio').style.display = "block";
+  document.body.style.backgroundColor = "lightblue";
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const tools = document.querySelectorAll('.tool');
     const infoBox = document.getElementById('info-box');
