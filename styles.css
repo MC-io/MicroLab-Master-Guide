@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.desk-container {
+    width: 100%;
+    max-width: 1600px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.desk {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Maintain a 16:9 aspect ratio */
+    background-image: url('laboratory.jpg'); /* Replace 'desk.jpg' with the path to your desk image */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tool {
+    position: absolute;
+    width: 10%; /* Adjust size as needed */
+    cursor: pointer;
+}
+
+.tool:hover {
+    transform: scale(1.3);
+}
+
+.info-box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 300px;
+    display: none; /* Initially hide the info box */
+}
+
+.info-box p {
+    margin: 0;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Ensure it's above everything else */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Max width */
+    position: relative;
+  }
+  
+  /* Close button (X) */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide all pages by default */
+  .modal-page {
+    display: none;
+  }
+  
+  /* Show active page */
+  .modal-page.active {
+    display: block;
+  }
+
+.next {
+    border-right: 10px solid; 
+    border-bottom: 10px solid;
+    height: 30px;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+
+.prev {  
+  border-right: 10px solid; 
+  border-bottom: 10px solid;
+  height: 30px;
+  width: 30px;
+  transform: rotate(-225deg);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

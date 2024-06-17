@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microbiology Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu" style="display: none;">
+        <h1>BIENVENIDO A MICROLAB MASTER GUIDE</h1>
+        <img src="imgs/logo.png" class="center">
+        <button id="start">INICIAR</button>
+
+    </div>
+    <div class="desk-container">
+        <div class="desk">
+            <img src="imgs/pruebas-sensibilidad.jpg" alt="Pruebas de sensibiliudad microbiana" class="tool" data-tool="sensibilidad" style="top: 80%; left: 10%; width: 12%;">
+            <img src="imgs/carac-morfologicas.jpg" alt="Caracteristicas Morfologicas" class="tool" data-tool="morfologia" style="top: 75%; left: 23%;">
+            <img src="imgs/pruebas-bioquimicas.jpg" alt="Pruebas Bioquimicas" class="tool" data-tool="bioquimica" style="top: 65%; left: 25%;">
+            <img src="imgs/tubos.jpg" alt="Tecnicas de Inoculacion: Tubos" class="tool" data-tool="tubos" style="top: 65%; left: 30%;">
+            <img src="imgs/placas.jpg" alt="Tecnicas de Inoculacion: Placas" class="tool" data-tool="placas" style="top: 65%; left: 40%;">
+            <img src="imgs/microscopio.jpg" alt="Tecnicas de Conteo Celulares en Microscopio" class="tool" data-tool="microscopio" style="top: 50%; left: 35%;">
+            <img src="imgs/agares.jpg" alt="Agares para medios de cultivo" class="tool" data-tool="agares" style="top: 50%; left: 45%;">
+            <img src="imgs/tinciones.jpg" alt="Tinciones" class="tool" data-tool="tincion" style="top: 50%; left: 70%;">
+        </div>
+    </div>
+
+    <!-- Pruebas de sensibilidad -->
+    <div id="modal-sensibilidad" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Page 1 -->
+            <div class="modal-sensibilidad-page" id="sensibilidad-page1" style="display: none;">
+                <h2>Pruebas de Sensibilidad Microbiana</h2>
+                <h3>E-test</h3>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="sensibilidad" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 2 -->
+            <div class="modal-sensibilidad-page" id="sensibilidad-page2">
+                <h2>Pruebas de Sensibilidad Microbiana</h2>
+                <h3>Ejemplos de bacterias comunes y sus antibióticos inhibidores:</h3>
+                <ul>
+                    <li><strong>Staphylococcus aureus: </strong>Penicilina G, meticilina, vancomicina, clindamicina, ciprofloxacina</li>
+                    <li><strong>Escherichia coli: </strong>Ampicilina, cefotaxima, gentamicina, ciprofloxacina, nitrofurantoína</li>
+                    <li><strong>Klebsiella pneumoniae: </strong> Ceftazidima, imipenem, meropenem, ciprofloxacina, amikacina</li>
+                    <li><strong>Pseudomonas aeruginosa: </strong>Ceftazidima, imipenem, meropenem, ciprofloxacina, gentamicina</li>
+                    <li><strong>Streptococcus pneumoniae </strong>Penicilina G, amoxicilina, cefotaxima, levofloxacina, vancomicina</li>
+                  </ul>
+                <button modal-type="sensibilidad" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="sensibilidad" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 3 -->
+            <div class="modal-sensibilidad-page" id="sensibilidad-page2">
+                <h2>Pruebas de Sensibilidad Microbiana</h2>
+                <h3>Gram positivas:</h3>
+                <ul>
+                    <li><strong>Enterococcus faecalis: </strong>Ampicilina, vancomicina, linezolid, daptomicina</li>
+                    <li><strong>Streptococcus pyogenes: </strong>Penicilina G, amoxicilina, clindamicina, azitromicina</li>
+                    <li><strong>Enterococcus faecium: </strong>Vancomicina, linezolid, daptomicina, tigeciclina</li>
+                    <li><strong>Listeria monocytogenes: </strong>Ampicilina, gentamicina, trimetoprim-sulfametoxazol, linezolid</li>
+                  </ul>
+                <h3>Gram negativas:</h3>
+                <ul>
+                    <li><strong>Haemophilus influenzae: </strong>Ampicilina, vancomicina, linezolid, daptomicina</li>
+                    <li><strong>Neisseria gonorrhoeae: </strong>Penicilina G, amoxicilina, clindamicina, azitromicina</li>
+                    <li><strong>Salmonella Typhi: </strong>Vancomicina, linezolid, daptomicina, tigeciclina</li>
+                    <li><strong>Legionella pneumophila: </strong>Ampicilina, gentamicina, trimetoprim-sulfametoxazol, linezolid</li>
+                </ul>
+                <h3>Anaerobias:</h3>
+                <ul>
+                    <li><strong>Bacteroides fragilis: </strong> Metronidazol, clindamicina, imipenem, meropenem</li>
+                    <li><strong>Clostridium difficile: </strong>Metronidazol, vancomicina, tigeciclina, fidaxomicina</li>
+                    <li><strong>Peptostreptococcus spp.: </strong> Penicilina G, ampicilina, clindamicina, metronidazol </li>
+                </ul>
+                <button modal-type="sensibilidad" class="prevBtn"><div class="triangle prev"></div></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Caracteristicas morfologicas -->
+    <div id="modal-morfologia" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Page 1 -->
+            <div class="modal-morfologia-page" style="display: none;">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Bacterias Gram Positivas</h3>
+                <ol>
+                    <strong><li>Staphylococcus aureus:</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Cocos (esféricos), en racimos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias doradas, lisas y redondas en agar sangre. A menudo presentan hemólisis (clara zona alrededor de las colonias).</li>
+                    </ul>
+                    <strong><li>Streptococcus pyogenes</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong> Cocos, en cadenas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas, redondas y blancas en agar sangre, con hemólisis beta (zona clara alrededor de las colonias).</li>
+                    </ul>
+                    <strong><li>Bacillus subtilis</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos (en forma de bastón), a veces forman esporas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grandes, rugosas, de color blanco o crema en agar nutritivo. Puede mostrar zonas de esporulación (apariencia granulada).</li>
+                    </ul>
+                    <strong><li>Clostridium perfringens</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos, a menudo forman esporas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong> Colonias de tamaño mediano, redondas y lisas en agar anaeróbico, con doble zona de hemólisis en agar sangre</li>
+                    </ul>
+                    <strong><li>Staphylococcus epidermidis</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Cocos, en racimos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas, lisas y redondas en agar sangre.</li>
+                    </ul>
+                    <strong><li>Streptococcus pneumoniae</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Diplococos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias mucoides y alfa-hemolíticas en agar sangre.</li>
+                    </ul>
+                    <strong><li>Clostridium difficile</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos, esporulados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias amarillentas en medios selectivos anaeróbicos.</li>
+                    </ul>
+                    <strong><li>Listeria monocytogenes</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos cortos</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas, redondas y transparentes en agar sangre, con hemólisis beta débil.</li>
+                    </ul>
+                    <strong><li>Corynebacterium diphtheriae</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos cortos, pleomórficos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grisáceas, en forma de hoyuelo en agar telurito.</li>
+                    </ul>
+                </ol>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 2 -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Bacterias Gram Positivas</h3>
+                <ol start="10">
+                    <strong><li>Enterococcus faecalis</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Cocos, en pares o cadenas cortas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y redondas en agar sangre, a veces alfa-hemolíticas.</li>
+                    </ul>
+                    <strong><li>Lactobacillus acidophilus</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos largos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas, blancas y lisas en agar MRS.</li>
+                    </ul>
+                    <strong><li>Nocardia asteroides</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos filamentosos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas o de color crema, rugosas y secas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Streptomyces spp.</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos filamentosos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias polvosas y de diversos colores en agar ISP.</li>
+                    </ul>
+                    <strong><li>Actinomyces israelii</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos filamentosos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias de apariencia granular, en forma de molar en agar sangre.</li>
+                    </ul>
+                    <strong><li>Micrococcus luteus</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Cocos, en tétradas</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y amarillas en agar nutritivo.</li>
+                    </ul>
+                    <strong><li>Propionibacterium acnes</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos cortos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas, blancas y lisas en agar sangre anaeróbico.</li>
+                    </ul>
+                    <strong><li>Mycobacterium tuberculosis</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos rectos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias rugosas y de crecimiento lento en agar Löwenstein-Jensen.</li>
+                    </ul>
+                    <strong><li>Staphylococcus saprophyticus</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Cocos, en racimos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas, lisas y redondas en agar sangre.</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 3  -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Bacterias Gram Positivas</h3>
+                <ol start="19">
+                    <strong><li> Streptococcus agalactiae</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Cocos, en cadenas</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas y beta-hemolíticas en agar sangre.</li>
+                    </ul>
+                    <strong><li>Bacillus anthracis</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos, esporulados</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grandes, rugosas y blancas en agar nutritivo.</li>
+                    </ul>
+                    <strong><li>Bacillus cereus</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos, esporulados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grandes, planas y de color blanco en agar nutritivo.</li>
+                    </ul>
+                    <strong><li>Clostridium tetani</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos, esporulados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y rugosas en agar anaeróbico.</li>
+                    </ul>
+                    <strong><li>Clostridium botulinum</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos, esporulados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias lisas y translúcidas en medios anaeróbicos.</li>
+                    </ul>
+                    <strong><li>Corynebacterium jeikeium</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos cortos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y lisas en agar sangre.</li>
+                    </ul>
+                    <strong><li>Enterococcus faecium</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Cocos, en pares o cadenas cortas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y grises en agar sangre.</li>
+                    </ul>
+                    <strong><li>Lactobacillus casei</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos largos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas, lisas y blancas en agar MRS.</li>
+                    </ul>
+                    <strong><li>Rhodococcus equi</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos cortos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias mucoides y de color salmón en agar sangre.</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 4  -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Bacterias Gram Negativas</h3>
+                <ol>
+                    <strong><li>Escherichia coli</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos cortos y rectos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias redondas, lisas, brillantes y de color blanco o crema en agar MacConkey (puede fermentar lactosa, formando colonias rosadas).</li>
+                    </ul>
+                    <strong><li>Pseudomonas aeruginosa</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos rectos y delgados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grandes, planas, con bordes irregulares y coloración verde-azulada en agar nutritivo o agar sangre. A menudo produce un olor característico a uva</li>
+                    </ul>
+                    <strong><li>Salmonella enterica</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos rectos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grandes y lisas en agar MacConkey (no fermenta lactosa, colonias incoloras o translúcidas) y agar XLD (colonias negras o con centros negros debido a la producción de H2S).</li>
+                    </ul>
+                    <strong><li>Neisseria meningitidis</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Diplococos (pares de cocos).</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas, redondas y lisas en agar chocolate. Necesita medios enriquecidos y ambientes con CO2 elevado para crecer.</li>
+                    </ul>
+                    <strong><li>Vibrio cholerae</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos curvados (forma de coma)..</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas, redondas y lisas en agar TCBS (tiosulfato-citrato-sales biliares-sacarosa), con colonias amarillas debido a la fermentación de la sacarosa.</li>
+                    </ul>
+                    <strong><li>Klebsiella pneumoniae</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos rectos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grandes, mucoides y rosadas en agar MacConkey.</li>
+                    </ul>
+                    <strong><li>Legionella pneumophila</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos finos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias brillantes en agar BCYE.</li>
+                    </ul>
+                    <strong><li>Shigella dysenteriae</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos rectos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias incoloras en agar MacConkey (no fermentan lactosa).</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 5  -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Bacterias Gram Negativas</h3>
+                <ol start="9">
+                    <strong><li>Proteus mirabilis</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos rectos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias con un patrón de desplazamiento (swarming) en agar nutritivo.</li>
+                    </ul>
+                    <strong><li>Pseudomonas aeruginosa</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos rectos y delgados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grandes, planas, con bordes irregulares y coloración verde-azulada en agar nutritivo o agar sangre. A menudo produce un olor característico a uva</li>
+                    </ul>
+                    <strong><li>Helicobacter pylori</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos curvados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong> Colonias pequeñas y translúcidas en agar chocolate.</li>
+                    </ul>
+                    <strong><li>Yersinia pestis</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos cortos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y grisáceas en agar MacConkey</li>
+                    </ul>
+                    <strong><li>Acinetobacter baumannii</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Cocobacilos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias lisas y translúcidas en agar MacConkey.</li>
+                    </ul>
+                    <strong><li>Campylobacter jejuni</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos curvados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y planas en agar Campylobacter.</li>
+                    </ul>
+                    <strong><li>Enterobacter cloacae</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Bacilos cortos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias grandes y lisas en agar MacConkey.</li>
+                    </ul>
+                    <strong><li>Neisseria gonorrhoeae</li></strong>
+                    <ul>
+                        <li><strong>Forma morfologica: </strong>Diplococos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y translúcidas en agar Thayer-Martin.</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 6  -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Levaduras</h3>
+                <ol>
+                    <strong><li>Candida albicans</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura ovalada, forma pseudohifas y hifas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas y cremosas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Cryptococcus neoformans</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura encapsulada redonda.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias mucoides y cremosas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Candida glabrata</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura ovalada, no forma pseudohifas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias pequeñas y cremosas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Candida krusei</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura elongada, forma pseudohifas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias secas y arrugadas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Candida parapsilosis</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura ovalada, forma pseudohifas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias cremosas y lisas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Candida tropicalis</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura ovalada, forma pseudohifas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias cremosas y ligeramente arrugadas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Saccharomyces cerevisiae</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura ovalada o esférica.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias cremosas y lisas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Malassezia furfur</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura lipofílica</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias cremosas y amarillentas en medios enriquecidos con lípidos</li>
+                    </ul>
+                    <strong><li>Rhodotorula mucilaginosa</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura ovalada o esférica.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias rosadas y mucoides en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Trichosporon asahii</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Levadura con pseudohifas y hifas verdaderas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias secas y arrugadas en agar Sabouraud.</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 7  -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Hongos Filamentosos</h3>
+                <ol>
+                    <strong><li>Aspergillus fumigatus</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con cabezas conidiales.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias vellosas y verdes en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li> Aspergillus niger</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con cabezas conidiales.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias negras y polvorientas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Aspergillus flavus</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con cabezas conidiales.</li>
+                        <li><strong>Apariencia en Cultivo: </strong> Colonias verdes o amarillentas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Aspergillus terreus</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con cabezas conidiales.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias canela a marrón claro en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Penicillium spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con conidióforos ramificados.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias verdes, azules o blancas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Fusarium spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con macroconidios y microconidios.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias rosadas, moradas o blancas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Coccidioides immitis</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hongo dimórfico; esférulas en tejidos, micelial en cultivos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas a marrones en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Paracoccidioides brasiliensis</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hongo dimórfico; levaduras multipolares en tejidos, micelial en cultivos.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas a marrones en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Trichophyton rubrum</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con microconidios.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas a rojizas en agar Sabouraud.</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 8  -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Hongos Filamentosos</h3>
+                <ol start="10">
+                    <strong><li>Trichophyton mentagrophytes</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con microconidios y macroconidios.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas a beige en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Alternaria spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con conidios multicelulares.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias oscuras y vellosas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Rhizopus spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas no septadas con esporangios.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas que se vuelven negras con el tiempo en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Mucor spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas no septadas con esporangios.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas a grises en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Absidia spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas no septadGeotrichum candidumas con esporangios.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas a grises en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Curvularia spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con conidios multicelulares.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias marrones a negras en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Geotrichum candidum</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas septadas con artrósporas.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas a grises en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Rhizomucor spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas no septadas con esporangios.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas en agar Sabouraud.</li>
+                    </ul>
+                    <strong><li>Zygomycetes spp.</li></strong>
+                    <ul>
+                        <li><strong>Morfología: </strong>Hifas no septadas con esporangios.</li>
+                        <li><strong>Apariencia en Cultivo: </strong>Colonias blancas a grises en agar Sabouraud.</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 9  -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Microalgas</h3>
+                <ol>
+                    <strong><li>Chlorella spp.</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Puede crecer en medios como Bold's Basal Medium o Chu 10 Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Forma colonias verdes unicelulares en suspensión, con un alto crecimiento en condiciones de luz y nutrientes adecuados.</li>
+                    </ul>
+                    <strong><li>Spirulina spp.</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Puede crecer en medios como Bold's Basal Medium o Chu 10 Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Forma filamentos azul-verde característicos, con una alta tasa de crecimiento y capacidad para producir biomasa rica en proteínas y otros nutrientes.</li>
+                    </ul>
+                    <strong><li>Dunaliella salina</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Se cultiva típicamente en medios salinos como el Jaworski Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Presenta un color verde intenso debido a la acumulación de betacarotenos en condiciones de estrés salino, formando colonias unicelulares en suspensión</li>
+                    </ul>
+                    <strong><li>Haematococcus pluvialis</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Se cultiva en medios como el Bold's Basal Medium o el Chu 10 Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Bajo condiciones de estrés, cambia su coloración a rojo debido a la acumulación de astaxantina, formando colonias unicelulares o en forma de quistes.</li>
+                    </ul>
+                    <strong><li>Nannochloropsis spp.</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Se cultiva en medios como el F/2 Medium o el Guillard's F/2 Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Forma colonias verdes unicelulares en suspensión, con un alto contenido de lípidos y ácidos grasos omega-3.</li>
+                    </ul>
+                    <strong><li>Arthrospira spp. (Spirulina)</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Puede crecer en medios como Zarrouk Medium o Bristol Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Forma filamentos azul-verde característicos, con alto contenido de proteínas, vitaminas y minerales.</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="morfologia" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 10  -->
+            <div class="modal-morfologia-page">
+                <h2>Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</h2>
+                <h3>Microalgas</h3>
+                <ol start="7">
+                    <strong><li>Chlamydomonas reinhardtii</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Se cultiva en medios como Tris-Acetate-Phosphate (TAP) Medium o High Salt Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Presenta células verdes unicelulares en suspensión, utilizadas en estudios de biología y biotecnología.</li>
+                    </ul>
+                    <strong><li>Euglena spp.</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Se cultiva en medios acuosos como el F/2 Medium o el TAP Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Presenta células verdes unicelulares con un ojo sensible a la luz (estigma), utilizada en estudios de biología celular.</li>
+                    </ul>
+                    <strong><li>Diatomeas (Bacillariophyceae)</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Se cultivan en medios acuosos con silicatos como el F/2 Medium o el Guillard's F/2 Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Forman estructuras celulares con paredes de sílice (frústulas), importantes en la producción de oxígeno y en estudios ambientales.</li>
+                    </ul>
+                    <strong><li>Ostreococcus spp.</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Se cultiva en medios acuosos como el K Medium o el artificial seawater (ASW).</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Microalga unicelular con rápida división celular, utilizada en estudios de biología y genética.</li>
+                    </ul>
+                    <strong><li>Chlorella vulgaris</li></strong>
+                    <ul>
+                        <li><strong>Medio de Cultivo: </strong>Crece bien en medios como Bold's Basal Medium o F/2 Medium.</li>
+                        <li><strong>Caracteristicas en Cultivo: </strong>Forma colonias verdes unicelulares en suspensión, utilizadas en la industria alimentaria y farmacéutica</li>
+                    </ul>
+                </ol> 
+                <button modal-type="morfologia" class="prevBtn"><div class="triangle prev"></div></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Pruebas Bioquimicas -->
+    <div id="modal-bioquimica" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <!-- Page 1 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Catalasa</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong> Formación de burbujas.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (presencia de burbujas).</li>
+
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 2 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Oxidasa</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color púrpura.</li>
+                    <li><strong>Cambio de color: </strong>Incoloro a púrpura.</li>
+
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 3 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Coagulasa</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Coagulación del plasma.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (formación de coágulo).</li>
+
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 4 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Ureasa</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color rosa.</li>
+                    <li><strong>Cambio de color: </strong>Amarillo a rosa.</li>
+
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 5 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Citrato de Simmons</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color azul.</li>
+                    <li><strong>Cambio de color: </strong>Verde a azul.</li>
+
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 6 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Voges-Proskauer (VP)</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color rojo.</li>
+                    <li><strong>Cambio de color: </strong>Incoloro a rojo.</li>
+
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 7 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Rojo de Metilo (MR)</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color rojo.</li>
+                    <li><strong>Cambio de color: </strong>Amarillo a rojo.</li>
+
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 8 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Indol</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color rojo tras la adición de reactivo de Kovac.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (reacción con reactivo de Kovac).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 9 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Desaminación de Fenilalanina</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color verde tras la adición de reactivo férrico.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (reacción con reactivo férrico).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 10 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Nitrato</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color rojo tras la adición de reactivos A y B; si no hay cambio, añadir zinc para ver si se torna rojo (indica negativo).</li>
+                    <li><strong>Cambio de color: </strong>Incoloro a rojo (sin zinc).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 11 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de ONPG (Orto-Nitrofenil-β-galactopiranósido)</h3>
+                <ul>
+                    <li><strong>Propósito: </strong>Detectar la presencia de β-galactosidasa.</li>
+                    <li><strong>Resultado positivo: </strong>Color amarillo.</li>
+                    <li><strong>Cambio de color: </strong>Incoloro a amarillo.</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 12 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Fermentación de Carbohidratos (Glucosa, Lactosa, Manitol, etc.)</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Cambio a color amarillo (producción de ácido).</li>
+                    <li><strong>Cambio de color: </strong>Rojo a amarillo.</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 13 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Hidrólisis de Almidón</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Zona clara alrededor del crecimiento tras la adición de yodo.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (claro vs. azul oscuro).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 14 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Hidrólisis de Gelatina</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Licuefacción del medio.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (estado sólido a líquido).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 15 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Hidrólisis de Esculina</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Oscurecimiento del medio.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (oscuro).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 16 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Motilidad</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Dispersión del crecimiento desde la línea de inoculación.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (dispersión).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 17 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Gas (Durham Tube)</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>Formación de burbujas en el tubo Durham.</li>
+                    <li><strong>Cambio de color: </strong>No aplica (presencia de burbujas).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 18 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Triple Sugar Iron Agar (TSI)</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>
+                        <ul>
+                            <li><strong>Glucosa: </strong>Fondo amarillo.</li>
+                            <li><strong>Lactosa/Sacarosa: </strong>Fondo y superficie amarillos.</li>
+                            <li><strong>Producción de gas: </strong>Grietas en el agar.</li>
+                            <li><strong>Producción de H2S: </strong>Precipitado negro.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cambio de color: </strong>Rojo a amarillo; negro (H2S).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 19 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de LIA (Lysine Iron Agar)</h3>
+                <ul>
+                    <li><strong>Resultado positivo: </strong>
+                        <ul>
+                            <li><strong>Descarboxilación de Lisina: </strong>Fondo púrpura.</li>
+                            <li><strong>Desaminación de Lisina: </strong>Superficie roja.</li>
+                            <li><strong>Producción de H2S: </strong>Precipitado negro.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cambio de color: </strong>Amarillo a púrpura (descarboxilación), púrpura a rojo (desaminación), negro (H2S).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 20 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Oxidación-Fermentación (OF)</h3>
+                <ul>
+                    <li><strong>Propósito: </strong>Determinar si el microorganismo oxida o fermenta glucosa.</li>
+                    <li><strong>Resultado positivo: </strong>Amarillo (fermentación y/o oxidación).</li>
+                    <li><strong>Cambio de color: </strong>Verde a amarillo.</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 21 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Nitrógeno Indol (MIO)</h3>
+                <ul>
+                    <li><strong>Propósito: </strong>Prueba combinada para detectar motilidad, indol y ornitina.</li>
+                    <li><strong>Resultado positivo: </strong>Cambio de color para cada componente.</li>
+                    <li><strong>Cambio de color: </strong>Rojo (indol), púrpura (ornitina), y dispersión (motilidad).</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 22 -->
+            <div class="modal-bioquimica-page" style="display: none;">
+                <h2>Pruebas Bioquimicas</h2>
+                <h3>Prueba de Sulfuro de Hidrógeno (H2S)</h3>
+                <ul>
+                    <li><strong>Propósito: </strong>Detectar la producción de H2S.</li>
+                    <li><strong>Resultado positivo: </strong>Coloración negra en el medio.</li>
+                    <li><strong>Cambio de color: </strong>Incoloro a negro.</li>
+                </ul>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Tubos -->
+    <div id="modal-tubos" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <!-- Page 1 -->
+            <div class="modal-tubos-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion en Tubo</h2>
+                <h3>Siembra por Estría Simple (Agar Inclinado Semisólido)</h3>
+                <p>Sembrar la muestra por estría en la parte superior del agar.</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 2 -->
+            <div class="modal-tubos-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion en Tubo</h2>
+                <h3>Siembra por Picadura (Agar Inclinado Semisólido)</h3>
+                <p>Sembrar la muestra con una punción en medio del agar.</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="tubos" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 3 -->
+            <div class="modal-tubos-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion en Tubo</h2>
+                <h3>Siembra Mixta (Picadura y Estría) (Agar Inclinado Semisólido)</h3>
+                <p>Sembrar la muestra por punción y luego generar una estría en la parte superior del agar.</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="tubos" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 4 -->
+            <div class="modal-tubos-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion en Tubo</h2>
+                <h3>Siembra por Agitación o Enjuague (Agar Líquido)</h3>
+                <p>Siembra de la muestra en todo el agar líquido por agitación hasta que se diluya.</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="tubos" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 5 -->
+            <div class="modal-tubos-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion en Tubo</h2>
+                <h3>Siembra por Vertido en Placa (Agar Semisólido)</h3>
+                <p>Siembra de la muestra por agitación hasta que se diluya y solidifique el agar con calor</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="tubos" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Placas -->
+    <div id="modal-placas" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <!-- Page 1 -->
+            <div class="modal-placas-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion de Placa</h2>
+                <h3>Vertido en Placa</h3>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 2 -->
+            <div class="modal-placas-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion de Placa</h2>
+                <h3>Extension en Placa</h3>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 3 -->
+            <div class="modal-placas-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion de Placa</h2>
+                <h3>Agotamiento por Estriacion</h3>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 4 -->
+            <div class="modal-placas-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion de Placa</h2>
+                <h3>Masiva</h3>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 5 -->
+            <div class="modal-placas-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion de Placa</h2>
+                <h3>Tecnica de los 3 Giros</h3>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 6 -->
+            <div class="modal-placas-page" style="display: none;">
+                <h2>Tecnicas de Inoculacion de Placa</h2>
+                <h3>Tecnica de los cuatro cuadrantes</h3>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Microscopio -->
+    <div id="modal-microscopio" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Page 1 -->
+            <div class="modal-microscopio-page" id="page1" style="display: none;">
+                <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
+                <h3>Conteo en Cámara de Neubauer</h3>
+                <p>Conteo celular de los 5 cuadrantes, sumarlos y promediarlos para luego multiplicarlos por 25</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 2 -->
+            <div class="modal-microscopio-page" id="page2">
+                <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
+                <h3>Conteo por Goteo</h3>
+                <p>Conteo celular de una fracción de la placa y multiplicarla por el número de fracciones.</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 3 -->
+            <div class="modal-microscopio-page" id="page2">
+                <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
+                <h3>Conteo Microscópico por Fluorescencia</h3>
+                <p>Conteo celular usando un escatergrama para evaluar su distribución y número total usando 1 fluorocromo.</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 4 -->
+            <div class="modal-microscopio-page" id="page2">
+                <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
+                <h3>Conteo por Hematocitómetro</h3>
+                <p>Parecida a la técnica de Neubauer, esta realiza el conteo de glóbulos rojos y es manual.</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 5 -->
+            <div class="modal-microscopio-page" id="page2">
+                <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
+                <h3>Conteo por Citometría de Flujo</h3>
+                <p>Conteo de células por análisis usando fluorescencia (2 fluorocromos), la relación es de concentración vs volumen de la muestra.</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 6 -->
+            <div class="modal-microscopio-page" id="page2">
+                <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
+                <h3>Conteo por Turbidez</h3>
+                <p>Conteo celular seleccionando una región poblada de la muestra y colocarla junto a un registrador de luz, para medir la turbidez y por ende la cantidad de células en ese lugar</p>
+                <img src="imgs/sensibilidad/e-test.png">
+                <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+     <!-- Agares -->
+     <div id="modal-agares" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Page 1 -->
+            <div class="modal-agares-page" id="page1" style="display: none;">
+                <h2>Agares para medios de Cultivo</h2>
+                <ol>
+                    <strong><li>Agar Nutriente (NA)</li></strong>
+                    <p>Bacterias no exigentes: Escherichia coli, Staphylococcus aureus, Bacillus subtilis.</p>
+
+                    <strong><li>Agar MacConkey (MAC)</li></strong>
+                    <p>Enterobacterias gramnegativas: Escherichia coli, Salmonella spp., Shigella spp.</p>
+
+                    <strong><li>Agar Sangre (BA)</li></strong>
+                    <p>Bacterias en general, especialmente aquellas que requieren nutrientes adicionales como hemina y NAD: Streptococcus pyogenes, Staphylococcus aureus.</p>
+
+                    <strong><li>Agar Chocolate (CA)</li></strong>
+                    <p>Microorganismos fastidiosos: Neisseria meningitidis, Haemophilus influenzae.</p>
+
+                    <strong><li>Agar Sabouraud Dextrosa (SDA)</li></strong>
+                    <p>Hongos y levaduras: Candida albicans, Aspergillus spp., Cryptococcus neoformans.</p>
+
+                    <strong><li>Agar XLD (Xilosa Lisina Desoxicolato)</li></strong>
+                    <p>Enterobacterias patógenas entéricas: Salmonella spp., Shigella spp.</p>
+
+                    <strong><li>Agar Eosina Azul de Metileno (EMB)</li></strong>
+                    <p>Enterobacterias: Escherichia coli, Klebsiella spp., Enterobacter spp.</p>
+
+                    <strong><li>Agar Cetrimida</li></strong>
+                    <p>Pseudomonas aeruginosa.</p>
+
+                    <strong><li>Agar Manitol Salado (MSA)</li></strong>
+                    <p>Estafilococos: Staphylococcus aureus.</p>
+
+                    <strong><li>Agar Baird Parker</li></strong>
+                    <p>Detección de coagulasa positiva en Staphylococcus aureus.</p>
+                </ol>
+                <button modal-type="agares" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 2 -->
+            <div class="modal-agares-page" id="page2">
+                <h2>Agares para medios de cultivo</h2>
+                <ol start="11">
+                    <strong><li>Agar TCBS (Tiosulfato Citrato Sales Biliares Sacarosa)</li></strong>
+                    <p>Vibrio cholerae y otros vibrios.</p>
+
+                    <strong><li>Agar TSA (Tripticaseína Soya)</li></strong>
+                    <p>Amplio espectro: diversos microorganismos.</p>
+
+                    <strong><li>Agar CLED (Cistina Lactosa Electrolito Deficiente)</li></strong>
+                    <p>Cuantificación de bacterias en orina.</p>
+
+                    <strong><li>Agar Chapman</li></strong>
+                    <p>Staphylococcus aureus, especialmente para detección de coagulasa positiva.</p>
+
+                    <strong><li>Agar MRS (de Man, Rogosa y Sharpe)</li></strong>
+                    <p>Bacterias lácticas: Lactobacillus spp., Streptococcus thermophilus.</p>
+
+                    <strong><li>Agar PDA (Papa Dextrosa Agar)</li></strong>
+                    <p>Hongos y levaduras: variedad de especies fúngicas.</p>
+
+                    <strong><li>Agar Hektoen Enteric</li></strong>
+                    <p>Bacterias entéricas patógenas: Salmonella spp., Shigella spp.</p>
+
+                    <strong><li>Agar Elliker</li></strong>
+                    <p>Bacterias lácticas utilizadas en la producción de lácteos.</p>
+
+                    <strong><li>Agar SWD (Sea Water Dilution)</li></strong>
+                    <p>Microalgas marinas y otros microorganismos acuáticos.</p>
+
+                    <strong><li>Agar Bristol</li></strong>
+                    <p>Mycobacterium tuberculosis y otras especies de Mycobacterium.</p>
+                </ol>
+                <button modal-type="agares" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="agares" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 3 -->
+            <div class="modal-agares-page" id="page2">
+                <h2>Agares para medios de cultivo</h2>
+                <ol start="21">
+                    <strong><li>Agar LB (Luria-Bertani)</li></strong>
+                    <p>Cultivo general de bacterias: Escherichia coli, Bacillus spp.</p>
+
+                    <strong><li>Agar BG11 (Blue-Green 11)</li></strong>
+                    <p>Microalgas: Chlorella spp., Spirulina spp.</p>
+
+                    <strong><li>Agar MGY (Mineral Glucose Yeast)</li></strong>
+                    <p>Bacterias fotosintéticas: Rhodobacter spp., Rhodospirillum spp.</p>
+
+                    <strong><li>Agar MB (Marine Broth)</li></strong>
+                    <p>Bacterias marinas y microorganismos acuáticos: Vibrio spp., Pseudomonas spp.</p>
+                    <strong><li>Agar Infusión Cerebro Corazón (BHI Agar)</li></strong>
+                    <ul>
+                        <li>Bacterias: Escherichia coli, Staphylococcus aureus, Streptococcus pneumoniae, Listeria monocytogenes, Clostridium spp.</li>
+                        <li>Hongos y levaduras: Candida albicans, Aspergillus spp., Cryptococcus neoformans, Saccharomyces cerevisiae</li>
+                    </ul>
+
+                    <strong><li>Agar MCCD (Mannitol Citrate Crystal Violet Dextrose Agar)</li></strong>
+                    <p>Microorganismos: Staphylococcus spp., incluyendo Staphylococcus aureus</p>
+
+                    <strong><li>Caldo Bolton</li></strong>
+                    <p>Microorganismos: Campylobacter spp., especialmente Campylobacter jejuni y Campylobacter coli</p>
+
+                    <strong><li>Caldo Preston</li></strong>
+                    <p>Microorganismos: Salmonella spp., especialmente Salmonella enterica serotipo Typhi</p>
+
+                    <strong><li>Agar ISA (Irgasan Sulfadiazine Azide Agar)</li></strong>
+                    <p>Microorganismos: Enterobacterias, especialmente Salmonella spp. y algunas cepas de Escherichia coli.</p>
+
+                    <strong><li>VRBG Agar (Violet Red Bile Glucose Agar)</li></strong>
+                    <p>Microorganismos: Enterobacterias patógenas, incluyendo Escherichia coli, Salmonella spp., y Shigella spp.</p>
+                </ol>
+                <button modal-type="agares" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="agares" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 4 -->
+            <div class="modal-agares-page" id="page2">
+                <h2>Agares para medios de cultivo</h2>
+                <ol start="31">
+                    <strong><li>Agar Cromogénico</li></strong>
+                    <p>Microorganismos: Diversas bacterias patógenas, dependiendo de la formulación específica del agar cromogénico (puede ser selectivo para E. coli O157, Salmonella spp., etc.).</p>
+
+                    <strong><li>Medio Bartley y Slanetz</li></strong>
+                    <p>Microorganismos: Enterococos, especialmente Enterococcus faecalis y Enterococcus faecium</p>
+
+                    <strong><li>Agar Acetamida</li></strong>
+                    <p>Microorganismos: Bacillus cereus y algunas cepas de Clostridium perfringens.</p>
+
+                    <strong><li>TSC Agar (Tryptose Sulfite Cycloserine Agar)</li></strong>
+                    <p>Microorganismos: Clostridium difficile y algunas otras especies de Clostridium</p>
+
+                    <strong><li>One Broth</li></strong>
+                    <p>Microorganismos: Salmonella spp., especialmente Salmonella enterica serotipo Typhi.</p>
+
+                    <strong><li>PALCAM Agar</li></strong>
+                    <p>Microorganismos: Listeria spp., especialmente Listeria monocytogenes.</p>
+
+                    <strong><li>Half Fraser Broth</li></strong>
+                    <p>Microorganismos: Enterococos, especialmente Enterococcus faecalis y Enterococcus faecium</p>
+
+                    <strong><li>OXOID Agar</li></strong>
+                    <p>Microorganismos: Diversas bacterias, dependiendo de la formulación específica del medio (puede ser para el recuento de bacterias aerobias, anaerobias, etc.).</p>
+                    
+                    <strong><li>DRBC (Direct Reducing Broth with Lactate)</li></strong>
+                    <p>Microorganismos: Bacterias anaerobias, especialmente Clostridium spp. y Bacteroides spp.</p>
+
+                    <strong><li>TSYE Agar (Tryptic Soy Yeast Extract Agar)</li></strong>
+                    <p>Microorganismos: Amplio espectro, utilizado para el cultivo general de bacterias</p>
+                </ol>
+                <button modal-type="agares" class="prevBtn"><div class="triangle prev"></div></button>
+                <button modal-type="agares" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
+            <!-- Page 5 -->
+            <div class="modal-agares-page" id="page2">
+                <h2>Agares para medios de cultivo</h2>
+                <ol start="41">
+                    <strong><li>Agar Mueller-Hinton (MH)</li></strong>
+                    <p>Amplia gama de bacterias: Escherichia coli, Staphylococcus aureus, Pseudomonas aeruginosa, Enterococcus spp., entre otros.</p>
+
+                    <strong><li>Agar BCYE (Buffered Charcoal Yeast Extract)</li></strong>
+                    <p>Microorganismos: Legionella spp., especialmente Legionella pneumophila.</p>
+
+                    <strong><li>Agar Thayer Martin</li></strong>
+                    <p>Microorganismos: Neisseria gonorrhoeae y Neisseria meningitidis. </p>
+                </ol>
+                <button modal-type="agares" class="prevBtn"><div class="triangle prev"></div></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Tincion -->
+    <div id="modal-tincion" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        <!-- Page 1 -->
+        <div class="modal-tincion-page" id="page1" style="display: none;">
+            <h2>Tinciones</h2>
+            <p>Las tinciones son técnicas de laboratorio utilizadas en histología y microbiología para visualizar y diferenciar componentes celulares y tisulares bajo el microscopio. Aquí te presento algunas de las tinciones más comunes junto con imágenes representativas: </p>
+            <h3>Tinción de Hematoxilina y Eosina (H&E)</h3>
+            <ul>
+                <li><strong>Hematoxilina </strong> tiñe los núcleos celulares de azul oscuro o púrpura.</li>
+                <li><strong>Eosina </strong>tiñe el citoplasma y otros componentes extracelulares de rosa o rojo.</li>
+            </ul>
+            <img src="imgs/sensibilidad/e-test.png">
+            <button modal-type="tincion" class="nextBtn"><div class="triangle next"></div></button>
+        </div>
+        <!-- Page 2 -->
+        <div class="modal-tincion-page" id="page1" style="display: none;">
+            <h2>Tinciones</h2>
+            <h3>Tinción de Gram</h3>
+            <p>Diferencia entre bacterias Gram-positivas (moradas) y Gram-negativas (rosadas). </p>
+            <img src="imgs/sensibilidad/e-test.png">
+            <button modal-type="tincion" class="prevBtn"><div class="triangle prev"></div></button>
+            <button modal-type="tincion" class="nextBtn"><div class="triangle next"></div></button>
+        </div>
+        <!-- Page 3 -->
+        <div class="modal-tincion-page" id="page1" style="display: none;">
+            <h2>Tinciones</h2>
+            <h3>Tinción de Ziehl-Neelsen (ácido-alcohol resistente)</h3>
+            <p>Utilizada para detectar Mycobacterium tuberculosis. Las bacterias ácido alcohol resistentes se tiñen de rojo, mientras que el fondo se tiñe de azul. </p>
+            <img src="imgs/sensibilidad/e-test.png">
+            <button modal-type="tincion" class="prevBtn"><div class="triangle prev"></div></button>
+            <button modal-type="tincion" class="nextBtn"><div class="triangle next"></div></button>
+        </div>
+        <!-- Page 4 -->
+        <div class="modal-tincion-page" id="page1" style="display: none;">
+            <h2>Tinciones</h2>
+            <h3>Tinción de Giemsa</h3>
+            <p>Utilizada principalmente para teñir parásitos y protozoarios en muestras de sangre.</p>
+            <img src="imgs/sensibilidad/e-test.png">
+            <button modal-type="tincion" class="prevBtn"><div class="triangle prev"></div></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
