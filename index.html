@@ -17,14 +17,38 @@
     </div>
     <div id="laboratorio" class="desk-container" style="display: none;">
         <div class="desk">
-            <img src="paintnet/agares-borde.png" alt="Agares para medios de cultivo" class="tool" data-tool="agares" style="top: 50%; left: 41%;">
-            <img src="paintnet/pruebas-sensibilidad-marco.png" alt="Pruebas de sensibiliudad microbiana" class="tool" data-tool="sensibilidad" style="top: 80%; left: 10%; width: 12%;">
-            <img src="paintnet/morfologia-borde.png" alt="Caracteristicas Morfologicas" class="tool" data-tool="morfologia" style="top: 75%; left: 23%;">
-            <img src="paintnet/bioquimica-borde.png" alt="Pruebas Bioquimicas" class="tool" data-tool="bioquimica" style="top: 65%; left: 20%;">
-            <img src="paintnet/tubos-borde.png" alt="Tecnicas de Inoculacion: Tubos" class="tool" data-tool="tubos" style="top: 65%; left: 30%;">
-            <img src="paintnet/placas-borde.png" alt="Tecnicas de Inoculacion: Placas" class="tool" data-tool="placas" style="top: 65%; left: 40%;">
-            <img src="paintnet/microscope-borde.png" alt="Tecnicas de Conteo Celulares en Microscopio" class="tool" data-tool="microscopio" style="top: 48%; left: 35%;">
-            <img src="paintnet/tinciones-borde.png" alt="Tinciones" class="tool" data-tool="tincion" style="top: 59%; left: 80%;">
+            <div class="tool agares" data-tool="agares" style="top: 52%; left: 43%;">
+                <img src="paintnet/agares-borde.png" alt="Agares para medios de cultivo" style="width: 80%;">
+                <span class="tooltip">Agares para Medios de Cultivo</span>
+            </div>
+            <div class="tool sensibilidad" data-tool="sensibilidad" style="top: 80%; left: 10%;">
+                <img src="paintnet/pruebas-sensibilidad-marco.png" alt="Pruebas de sensibiliudad microbiana" style="width: 120%;">
+                <span class="tooltip">Pruebas de Sensibilidad Microbiana</span>
+            </div>
+            <div class="tool sensibilidad" data-tool="bioquimica" style="top: 68%; left: 21%;">
+                <img src="paintnet/bioquimica-borde.png" alt="Pruebas Bioquimicas"  style="width: 100%;">
+                <span class="tooltip">Pruebas Bioquimicas</span>
+            </div>
+            <div class="tool microscopio" data-tool="microscopio" style="top: 52%; left: 36%;">
+                <img src="paintnet/microscope3-borde.png" alt="Tecnicas de Conteo Celulares en Microscopio" style="width: 100%;">
+                <span class="tooltip">Tecnicas de Conteo Celulares en Microscopio</span>
+            </div>
+            <div class="tool tubos" data-tool="tubos" style="top: 60%; left: 30%;">
+                <img src="paintnet/tubos-borde.png" alt="Tecnicas de Inoculacion: Tubos" style="width: 100%;">
+                <span class="tooltip">Tecnicas de Inoculacion: Tubos</span>
+            </div>
+            <div class="tool placas" data-tool="placas" style="top: 68%; left: 32%;">
+                <img src="paintnet/placas-borde.png" alt="Tecnicas de Inoculacion: Placas" class="tool" data-tool="placas" style="width: 100%;">
+                <span class="tooltip">Tecnicas de Inoculacion: Placas</span>
+            </div>
+            <div class="tool tincion" data-tool="tincion" style="top: 59%; left: 80%;">
+                <img src="paintnet/tinciones-borde.png" alt="Tinciones" style="width: 100%;">
+                <span class="tooltip">Tinciones</span>
+            </div>
+            <div class="tool morfologia" data-tool="morfologia" style="top: 82%; left: 22%;">
+                <img src="paintnet/morfologia-borde.png" alt="Caracteristicas Morfologicas"  style="width: 100%;">
+                <span class="tooltip">Morfologia y caracteristicas en placa de (Bacterias, Hongos y Microalgas)</span>
+            </div>
         </div>
     </div>
 
@@ -50,8 +74,10 @@
                     <li><strong>Pseudomonas aeruginosa: </strong>Ceftazidima, imipenem, meropenem, ciprofloxacina, gentamicina</li>
                     <li><strong>Streptococcus pneumoniae </strong>Penicilina G, amoxicilina, cefotaxima, levofloxacina, vancomicina</li>
                   </ul>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;"">
                 <button modal-type="sensibilidad" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="sensibilidad" class="nextBtn"><div class="triangle next"></div></button>
+            </div>
             </div>
             <!-- Page 3 -->
             <div class="modal-sensibilidad-page" id="sensibilidad-page2">
@@ -612,7 +638,7 @@
                     <li><strong>Cambio de color: </strong>No aplica (presencia de burbujas).</li>
 
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/1.png"> <br>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
             <!-- Page 2 -->
@@ -624,7 +650,7 @@
                     <li><strong>Cambio de color: </strong>Incoloro a púrpura.</li>
 
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/2.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -637,7 +663,7 @@
                     <li><strong>Cambio de color: </strong>No aplica (formación de coágulo).</li>
 
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/3.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -650,7 +676,7 @@
                     <li><strong>Cambio de color: </strong>Amarillo a rosa.</li>
 
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/4.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -663,7 +689,7 @@
                     <li><strong>Cambio de color: </strong>Verde a azul.</li>
 
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/5.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -676,7 +702,7 @@
                     <li><strong>Cambio de color: </strong>Incoloro a rojo.</li>
 
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/6.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -689,7 +715,7 @@
                     <li><strong>Cambio de color: </strong>Amarillo a rojo.</li>
 
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/7.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -701,7 +727,7 @@
                     <li><strong>Resultado positivo: </strong>Cambio a color rojo tras la adición de reactivo de Kovac.</li>
                     <li><strong>Cambio de color: </strong>No aplica (reacción con reactivo de Kovac).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/8.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -713,7 +739,7 @@
                     <li><strong>Resultado positivo: </strong>Cambio a color verde tras la adición de reactivo férrico.</li>
                     <li><strong>Cambio de color: </strong>No aplica (reacción con reactivo férrico).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/9.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -725,7 +751,7 @@
                     <li><strong>Resultado positivo: </strong>Cambio a color rojo tras la adición de reactivos A y B; si no hay cambio, añadir zinc para ver si se torna rojo (indica negativo).</li>
                     <li><strong>Cambio de color: </strong>Incoloro a rojo (sin zinc).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/10.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -738,7 +764,7 @@
                     <li><strong>Resultado positivo: </strong>Color amarillo.</li>
                     <li><strong>Cambio de color: </strong>Incoloro a amarillo.</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/11.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -750,7 +776,7 @@
                     <li><strong>Resultado positivo: </strong>Cambio a color amarillo (producción de ácido).</li>
                     <li><strong>Cambio de color: </strong>Rojo a amarillo.</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/12.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -762,7 +788,7 @@
                     <li><strong>Resultado positivo: </strong>Zona clara alrededor del crecimiento tras la adición de yodo.</li>
                     <li><strong>Cambio de color: </strong>No aplica (claro vs. azul oscuro).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/13.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -774,7 +800,7 @@
                     <li><strong>Resultado positivo: </strong>Licuefacción del medio.</li>
                     <li><strong>Cambio de color: </strong>No aplica (estado sólido a líquido).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/14.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -786,7 +812,7 @@
                     <li><strong>Resultado positivo: </strong>Oscurecimiento del medio.</li>
                     <li><strong>Cambio de color: </strong>No aplica (oscuro).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/15.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -798,7 +824,7 @@
                     <li><strong>Resultado positivo: </strong>Dispersión del crecimiento desde la línea de inoculación.</li>
                     <li><strong>Cambio de color: </strong>No aplica (dispersión).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/16.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -810,7 +836,7 @@
                     <li><strong>Resultado positivo: </strong>Formación de burbujas en el tubo Durham.</li>
                     <li><strong>Cambio de color: </strong>No aplica (presencia de burbujas).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/17.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -829,7 +855,7 @@
                     </li>
                     <li><strong>Cambio de color: </strong>Rojo a amarillo; negro (H2S).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/18.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -847,7 +873,7 @@
                     </li>
                     <li><strong>Cambio de color: </strong>Amarillo a púrpura (descarboxilación), púrpura a rojo (desaminación), negro (H2S).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/19.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -860,7 +886,8 @@
                     <li><strong>Resultado positivo: </strong>Amarillo (fermentación y/o oxidación).</li>
                     <li><strong>Cambio de color: </strong>Verde a amarillo.</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/20.png"> <br>
+                <img src="imgs/bioquimica/21.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -873,7 +900,7 @@
                     <li><strong>Resultado positivo: </strong>Cambio de color para cada componente.</li>
                     <li><strong>Cambio de color: </strong>Rojo (indol), púrpura (ornitina), y dispersión (motilidad).</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/22.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="bioquimica" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -886,7 +913,7 @@
                     <li><strong>Resultado positivo: </strong>Coloración negra en el medio.</li>
                     <li><strong>Cambio de color: </strong>Incoloro a negro.</li>
                 </ul>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/bioquimica/23.png"> <br>
                 <button modal-type="bioquimica" class="prevBtn"><div class="triangle prev"></div></button>
             </div>
         </div>
@@ -913,7 +940,7 @@
                 <h2>Tecnicas de Inoculacion en Tubo</h2>
                 <h3>Siembra por Estría Simple (Agar Inclinado Semisólido)</h3>
                 <p>Sembrar la muestra por estría en la parte superior del agar.</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/tubo/1.png"> <br>
                 <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
             </div>
             <!-- Page 2 -->
@@ -921,7 +948,7 @@
                 <h2>Tecnicas de Inoculacion en Tubo</h2>
                 <h3>Siembra por Picadura (Agar Inclinado Semisólido)</h3>
                 <p>Sembrar la muestra con una punción en medio del agar.</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/tubo/2.png"> <br>
                 <button modal-type="tubos" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -930,7 +957,7 @@
                 <h2>Tecnicas de Inoculacion en Tubo</h2>
                 <h3>Siembra Mixta (Picadura y Estría) (Agar Inclinado Semisólido)</h3>
                 <p>Sembrar la muestra por punción y luego generar una estría en la parte superior del agar.</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/tubo/3.png"> <br>
                 <button modal-type="tubos" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -939,7 +966,7 @@
                 <h2>Tecnicas de Inoculacion en Tubo</h2>
                 <h3>Siembra por Agitación o Enjuague (Agar Líquido)</h3>
                 <p>Siembra de la muestra en todo el agar líquido por agitación hasta que se diluya.</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/tubo/4.png"> <br>
                 <button modal-type="tubos" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -948,9 +975,8 @@
                 <h2>Tecnicas de Inoculacion en Tubo</h2>
                 <h3>Siembra por Vertido en Placa (Agar Semisólido)</h3>
                 <p>Siembra de la muestra por agitación hasta que se diluya y solidifique el agar con calor</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/tubo/5.png"> <br>
                 <button modal-type="tubos" class="prevBtn"><div class="triangle prev"></div></button>
-                <button modal-type="tubos" class="nextBtn"><div class="triangle next"></div></button>
             </div>
         </div>
     </div>
@@ -970,14 +996,14 @@
             <div class="modal-placas-page" style="display: none;">
                 <h2>Tecnicas de Inoculacion de Placa</h2>
                 <h3>Vertido en Placa</h3>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/placa/1.png"> <br>
                 <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
             </div>
             <!-- Page 2 -->
             <div class="modal-placas-page" style="display: none;">
                 <h2>Tecnicas de Inoculacion de Placa</h2>
                 <h3>Extension en Placa</h3>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/placa/2.png"> <br>
                 <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -985,7 +1011,7 @@
             <div class="modal-placas-page" style="display: none;">
                 <h2>Tecnicas de Inoculacion de Placa</h2>
                 <h3>Agotamiento por Estriacion</h3>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/placa/3.png"> <br>
                 <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -993,7 +1019,7 @@
             <div class="modal-placas-page" style="display: none;">
                 <h2>Tecnicas de Inoculacion de Placa</h2>
                 <h3>Masiva</h3>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/placa/4.png"> <br>
                 <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -1001,7 +1027,7 @@
             <div class="modal-placas-page" style="display: none;">
                 <h2>Tecnicas de Inoculacion de Placa</h2>
                 <h3>Tecnica de los 3 Giros</h3>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/placa/5.png"> <br>
                 <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="placas" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -1009,7 +1035,7 @@
             <div class="modal-placas-page" style="display: none;">
                 <h2>Tecnicas de Inoculacion de Placa</h2>
                 <h3>Tecnica de los cuatro cuadrantes</h3>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/placa/6.png"> <br>
                 <button modal-type="placas" class="prevBtn"><div class="triangle prev"></div></button>
             </div>
         </div>
@@ -1037,7 +1063,7 @@
                 <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
                 <h3>Conteo en Cámara de Neubauer</h3>
                 <p>Conteo celular de los 5 cuadrantes, sumarlos y promediarlos para luego multiplicarlos por 25</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/microscopio/1.png"> <br>
                 <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
             </div>
             <!-- Page 2 -->
@@ -1045,7 +1071,7 @@
                 <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
                 <h3>Conteo por Goteo</h3>
                 <p>Conteo celular de una fracción de la placa y multiplicarla por el número de fracciones.</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/microscopio/2.png"> <br>
                 <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -1054,7 +1080,7 @@
                 <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
                 <h3>Conteo Microscópico por Fluorescencia</h3>
                 <p>Conteo celular usando un escatergrama para evaluar su distribución y número total usando 1 fluorocromo.</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/microscopio/3.png"> <br>
                 <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -1063,7 +1089,7 @@
                 <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
                 <h3>Conteo por Hematocitómetro</h3>
                 <p>Parecida a la técnica de Neubauer, esta realiza el conteo de glóbulos rojos y es manual.</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/microscopio/4.png"> <br>
                 <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -1072,7 +1098,7 @@
                 <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
                 <h3>Conteo por Citometría de Flujo</h3>
                 <p>Conteo de células por análisis usando fluorescencia (2 fluorocromos), la relación es de concentración vs volumen de la muestra.</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/microscopio/5.png"> <br>
                 <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
                 <button modal-type="microscopio" class="nextBtn"><div class="triangle next"></div></button>
             </div>
@@ -1081,7 +1107,7 @@
                 <h2>Tecnicas de Conteo Celulares en Microscopio</h2>
                 <h3>Conteo por Turbidez</h3>
                 <p>Conteo celular seleccionando una región poblada de la muestra y colocarla junto a un registrador de luz, para medir la turbidez y por ende la cantidad de células en ese lugar</p>
-                <img src="imgs/sensibilidad/e-test.png">
+                <img src="imgs/microscopio/6.png"> <br>
                 <button modal-type="microscopio" class="prevBtn"><div class="triangle prev"></div></button>
             </div>
         </div>
@@ -1286,7 +1312,7 @@
                 <li><strong>Hematoxilina </strong> tiñe los núcleos celulares de azul oscuro o púrpura.</li>
                 <li><strong>Eosina </strong>tiñe el citoplasma y otros componentes extracelulares de rosa o rojo.</li>
             </ul>
-            <img src="imgs/sensibilidad/e-test.png">
+            <img src="imgs/tincion/1.png"> <br>
             <button modal-type="tincion" class="nextBtn"><div class="triangle next"></div></button>
         </div>
         <!-- Page 2 -->
@@ -1294,7 +1320,7 @@
             <h2>Tinciones</h2>
             <h3>Tinción de Gram</h3>
             <p>Diferencia entre bacterias Gram-positivas (moradas) y Gram-negativas (rosadas). </p>
-            <img src="imgs/sensibilidad/e-test.png">
+            <img src="imgs/tincion/2.png"> <br>
             <button modal-type="tincion" class="prevBtn"><div class="triangle prev"></div></button>
             <button modal-type="tincion" class="nextBtn"><div class="triangle next"></div></button>
         </div>
@@ -1303,7 +1329,7 @@
             <h2>Tinciones</h2>
             <h3>Tinción de Ziehl-Neelsen (ácido-alcohol resistente)</h3>
             <p>Utilizada para detectar Mycobacterium tuberculosis. Las bacterias ácido alcohol resistentes se tiñen de rojo, mientras que el fondo se tiñe de azul. </p>
-            <img src="imgs/sensibilidad/e-test.png">
+            <img src="imgs/tincion/3.png"> <br>
             <button modal-type="tincion" class="prevBtn"><div class="triangle prev"></div></button>
             <button modal-type="tincion" class="nextBtn"><div class="triangle next"></div></button>
         </div>
@@ -1312,7 +1338,7 @@
             <h2>Tinciones</h2>
             <h3>Tinción de Giemsa</h3>
             <p>Utilizada principalmente para teñir parásitos y protozoarios en muestras de sangre.</p>
-            <img src="imgs/sensibilidad/e-test.png">
+            <img src="imgs/tincion/4.png"> <br>
             <button modal-type="tincion" class="prevBtn"><div class="triangle prev"></div></button>
         </div>
     </div>
